@@ -140,7 +140,7 @@ void buscarHexagono(int triangulos[CANT][LADOS], int usado[CANT], int actual[CAN
 }
 
 void rotarTriangulo(int original[LADOS], int rotacion, int resultado[LADOS]){
-    int i;                      /* indice del lado */
+    int i; /* indice del lado */
 
     /* El operador % hace que al llegar al final se vuelva al inicio */
     for (i = 0; i < LADOS; i++)
@@ -148,7 +148,7 @@ void rotarTriangulo(int original[LADOS], int rotacion, int resultado[LADOS]){
 }
 
 void copiarTriangulo(int origen[LADOS], int destino[LADOS]){
-    int i;                      /* indice del lado */
+    int i; /* indice del lado */
 
     for (i = 0; i < LADOS; i++)
         destino[i] = origen[i];
@@ -176,8 +176,8 @@ void mostrarSalida(int puntaje, int hexagono[CANT][LADOS]){
     /* Ciclo de raylib: cada vuelta dibuja un cuadro de la ventana y se
        repite hasta que el usuario la cierra */
     while (!WindowShouldClose()){
-        BeginDrawing();             /* comienza el dibujo del cuadro */
-        ClearBackground(RAYWHITE);  /* se pinta el fondo */
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
 
         if (puntaje < 0){
             /* No hay solucion: solo se muestra la frase, centrada */
