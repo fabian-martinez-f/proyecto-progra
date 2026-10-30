@@ -201,11 +201,11 @@ void mostrarSalida(int puntaje, int hexagono[CANT][LADOS]){
 }
 
 void dibujarHexagono(int hexagono[CANT][LADOS], int cx, int cy, int radio){
-    double vx[CANT], vy[CANT];  /* coordenadas de los 6 vertices */
-    double angulo;              /* angulo de cada vertice, en radianes */
-    double gx, gy;              /* centro (baricentro) de cada triangulo */
-    int k;                      /* triangulo que se dibuja */
-    int sig;                    /* indice del vertice siguiente */
+    double vx[CANT], vy[CANT]; /* coordenadas de los 6 vertices */
+    double angulo; /* angulo de cada vertice, en radianes */
+    double gx, gy; /* centro (baricentro) de cada triangulo */
+    int k; /* triangulo que se dibuja */
+    int sig; /* indice del vertice siguiente */
 
     for (k = 0; k < CANT; k++){
         angulo = PI / 2 - k * PI / 3;
@@ -240,9 +240,9 @@ void dibujarHexagono(int hexagono[CANT][LADOS], int cx, int cy, int radio){
 }
 
 void dibujarNumero(int valor, double gx, double gy, double mx, double my){
-    char texto[10];             /* numero convertido a texto */
-    int x, y;                   /* posicion final del texto */
-    int ancho;                  /* ancho del texto en pixeles */
+    char texto[10]; /* numero convertido a texto */
+    int x, y; /* posicion final del texto */
+    int ancho;
 
     x = (int)(gx + 0.6 * (mx - gx));
     y = (int)(gy + 0.6 * (my - gy));
@@ -257,7 +257,7 @@ void dibujarNumero(int valor, double gx, double gy, double mx, double my){
 }
 
 void dibujarLinea(double x1, double y1, double x2, double y2, float grosor, Color color){
-    Vector2 inicio, fin;        /* puntos en el formato que pide raylib */
+    Vector2 inicio, fin;/* puntos en el formato que pide raylib */
 
     inicio.x = (float)x1;
     inicio.y = (float)y1;
