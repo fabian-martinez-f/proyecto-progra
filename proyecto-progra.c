@@ -71,7 +71,7 @@ int procesarDatos(int triangulos[CANT][LADOS], int mejorHexagono[CANT][LADOS]){
     return mejorPuntaje;
 }
 
-/* busca el mejor hexagono usando RECURSIVIDAD: en cada llamada pone un
+/* busca el mejor hexagono usando recursividad: en cada llamada pone un
    triangulo en una posicion y se llama a si misma para la siguiente.
    Cada triangulo queda como {radio izq, lado externo, radio der} y el radio
    der de uno tiene que ser igual al radio izq del siguiente */
